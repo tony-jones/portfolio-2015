@@ -1,0 +1,481 @@
+<!DOCTYPE html>
+<!--[if lt IE 7 ]><html class="ie ie6" lang="en"> <![endif]-->
+<!--[if IE 7 ]><html class="ie ie7" lang="en"> <![endif]-->
+<!--[if IE 8 ]><html class="ie ie8" lang="en"> <![endif]-->
+<!--[if IE 9 ]><html class="ie ie9" lang="en"> <![endif]-->
+<!--[if (gte IE 10)|!(IE)]><!-->
+<html id="skrollr-body">
+
+  <head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+  <meta name="author" content="Anthony Jones - @iamtonybagels">
+  <meta name="keywords" content="" />
+
+  <title>UX Strategies For Increasing Online Donations</title>
+  <meta name="description" content="Charitable donations are the life blood of non-profit organizations. Your goal should be to simplify the process of making an online donation. This article w...">
+  <link type="text/css" rel="stylesheet" href="/portfolio-2015/assets/styles/main.css">
+  <link rel="canonical" href="anthonyjones.me/portfolio-2015/ux/ux-strategies-for-increasing-online-donations">
+  <link rel="alternate" type="application/rss+xml" title="Anthony Jones | Product Designer" href="anthonyjones.me/portfolio-2015/feed.xml" />
+  <link rel="shortcut icon" href="/favicon.ico">
+  <link rel="profile" href="http://gmpg.org/xfn/11">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css"> 
+  <style>
+    #page,footer {
+      visibility:hidden;
+      opacity:0;
+      filter:alpha(opacity=0);
+      -moz-transition:opacity 0.25s ease-in-out;
+      -webkit-transition:opacity 0.25s ease-in-out;
+      -o-transition:opacity 0.25s ease-in-out;
+      -ms-transition:opacity 0.25s ease-in-out;
+      transition:opacity 0.25s ease-in-out;
+    }
+    .wf-active #page,.wf-active footer {
+      visibility:visible;
+      opacity:1;
+      filter:alpha(opacity=100);
+    }
+  </style>
+</head>
+
+
+
+
+    
+ 
+
+
+  <body>
+    <div id="page" class="hfeed site">
+      <span id="back-to-top" class="section scrollspy"></span>
+      <a class="skip-link screen-reader-text" href="#content"></a>
+
+        <!-- Desktop Navigation -->
+  <header role="banner" class="hide-on-small-only">
+    <div id="toolbar" class="navbar-fixed">
+      <nav id="banner" data-0="height:130px" data-128="height: 64px" class="uva-blue headroom" role="navigation">
+        <div class="container">
+          <div class="nav-wrapper">
+            <a id="desktop-mobile-button" data-activates="mobile-demo" class="mobile-button hide-on-med-and-up sidenav_button btn-floating waves-effect clear-icon">
+              <i class="fa fa-bars text-black"></i>
+            </a>
+            <div class="right">
+              <ul class="hide-on-small">
+                <li class="tab close-nav waves-effect">
+                  <a href="/portfolio-2015/writing">Writing</a>
+                </li>
+                <li class="tab close-nav waves-effect">
+                  <a href="/portfolio-2015/projects">Projects</a>
+                </li>
+                <li class="tab close-nav">
+                  <a href="https://github.com/tony-jones/portfolio-2015">GitHub</a>
+                </li>
+                <li class="tab close-nav">
+                  <a href="mailto:&#105;&#110;&#102;&#111;&#064;&#097;&#110;&#116;&#104;&#111;&#110;&#121;&#106;&#111;&#110;&#101;&#115;&#046;&#109;&#101;">Contact</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div id="title" data-0="font-size: 40px; padding: 0 0 24px 35px;" data-128="font-size: 26px; padding: 0 0 15px 50px;">
+            <a id="home-logo" href="/">
+              Anthony Jones<span class="regular teal-text">.</span>
+            </a>
+          </div>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Mobile Device Navigation For CSS FIXED BUGS-->
+  <div id="mobile-toolbar" class="navbar-fixed hide-on-med-and-up">
+    <nav id="mobile-banner" class="uva-blue" role="navigation">
+      <div class="container">
+        <div class="nav-wrapper">
+          <a href="/" class="brand-logo grey-text text-darken-3 light">Anthony Jones<span class="regular teal-text">.</a>
+          <ul class="left hide-on-med-and-up">
+            <li><a data-activates="mobile-demo" class="sidenav_button waves-effect"><i class="fa fa-bars"></i></a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </div>
+
+  <!-- Mobile Device Navigation For CSS FIXED BUGS-->
+  <nav class="orange white">
+    <div class="side-nav" id="mobile-demo">
+      <div class="sidenav-logo grey lighten-3">
+        <a id="side-close" class="waves-effect close-arrow">
+          <i class="fa fa-arrow-left"></i>
+        </a>
+      </div>
+      <ul class="menu">
+        <li class="tab close-nav">
+          <a href="/portfolio-2015/writing">Writing</a>
+        </li>
+        <li class="tab close-nav">
+          <a href="/portfolio-2015/projects">Projects</a>
+        </li>
+        <li class="tab close-nav">
+          <a href="https://github.com/tony-jones/portfolio-2015">GitHub</a>
+        </li>
+        <li class="tab close-nav">
+          <a href="&#105;&#110;&#102;&#111;&#064;&#097;&#110;&#116;&#104;&#111;&#110;&#121;&#106;&#111;&#110;&#101;&#115;&#046;&#109;&#101;">Contact</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+
+      <div id="content" class="site-content" style="margin-top: 125px;">
+            <!-- Set your background image for this header on the line below. -->
+  <article itemscope itemtype="http://schema.org/Article">
+    <main>
+      <div class="content-single-top">
+        <div id="index-banner" class="section no-pad-bot overlay" itemprop="image" content="http://appmango.net/anthonyjones/wp-content/uploads/2015/09/heart.jpg"
+        style="background-color: rgba(0, 148, 255, 0.26);
+               background-image: linear-gradient(
+               rgba(0, 0, 0, 0.3),
+               rgba(0, 0, 0, 0.3) ),
+               url('http://appmango.net/anthonyjones/wp-content/uploads/2015/09/heart.jpg');
+               background-repeat: no-repeat;
+               background-attachment: scroll;
+               background-position: center top;
+               background-size: cover;
+               -o-background-size: cover;">
+          <div class="banner_container">
+            <div class="heading">
+              <div class="badges center">
+                <a href="#" rel="category tag">UX</a>
+              </div>
+              <h1 itemprop="headline" class="title-padding header center white-text">UX Strategies For Increasing Online Donations</h1>
+              <div class="center">
+                <h2 itemprop="alternativeHeadline" id="subtitle" class="light header col s12 white-text">Charities truly live or die by the user experience. Give Your Users an Amazing Experience</h2>
+              </div>
+              <div class="post-details center">
+                <span class="date updated white-text" itemprop="datePublished">
+                  September 21, 2015
+                </span>
+                &nbsp;
+                <span class="author vcard white-text">
+                by <span itemprop="author" itemscope itemtype="http://schema.org/Person">
+                  <a class="white-text" title="" rel="author" itemprop="name"> Anthony Jones</a>
+                   </span>
+                </span>
+              </div>
+            </div>
+            <br><br>
+          </div>
+        </div>
+
+        <!-- Post Content -->
+        <div class="container">
+          <div class="row">
+            <div class="image-caption center-align">
+              image is courtesy of Mayur Gala at Unsplash.com
+            </div>
+            <div class="col s12 m12 l8 offset-l2">
+              <div class="fixed-action-btn hide-on-small-only">
+  <a class="tooltipped btn-floating btn-large grey darken-3" data-position="left" data-delay="50" data-tooltip="Share this Post!">
+    <i class="fa fa-share"></i>
+  </a>
+  <ul class="fixed-social-links">
+    <li><a href="https://plus.google.com/share?url='anthonyjones.me/portfolio-2015/ux/ux-strategies-for-increasing-online-donations" target="_blank" class="tooltipped btn-floating red" title="Share on Google +" data-position="left" data-delay="10" data-tooltip="Share on Google+"><i class="fa fa-google-plus"></i></a></li>
+    <li><a href="http://www.linkedin.com/shareArticle?mini=true&amp;url=anthonyjones.me/portfolio-2015/ux/ux-strategies-for-increasing-online-donations&amp;title=UX Strategies For Increasing Online Donations" target="_blank" class="tooltipped btn-floating blue darken-1" title="Share on Linkedin" data-position="left" data-delay="50" data-tooltip="Share on Linkedin"><i class="fa fa-linkedin"></i></a></li>
+    <li><a href="https://www.facebook.com/sharer/sharer.php?u='anthonyjones.me/portfolio-2015/ux/ux-strategies-for-increasing-online-donations" target="_blank" class="tooltipped btn-floating indigo" title="Share on Facebook" data-position="left" data-delay="50" data-tooltip="Share on Facebook"><i class="fa fa-facebook"></i></a></li>
+    <li><a href="http://twitter.com/share?text=UX Strategies For Increasing Online Donations&url=http://anthonyjones.me/portfolio-2015/ux/ux-strategies-for-increasing-online-donations&via=iamtonybagels" target="_blank" class="tooltipped btn-floating blue lighten-1" title="Share on Twitter" data-position="left" data-delay="50" data-tooltip="Share on Twitter"><i class="fa fa-twitter"></i></a></li>
+  </ul>
+</div>
+
+<!-- Modal Structure -->
+<div id="modal1" class="modal" aria-hidden="true"> <!-- Screen Readers Don't Need The Modal -->
+  <div class="modal-content center">
+    <h6 class="regular grey-text text-darken-2">Share This Article</h6>
+    <h4 class="regular blue-text text-darken-3">UX Strategies For Increasing Online Donations</h4>
+    <h5 class="light grey-text text-darken-2">Charities truly live or die by the user experience. Give Your Users an Amazing Experience</h5>
+    <span class="light grey-text text-darken-2">by  Anthony Jones</span>
+    <br><br>
+
+    <a href="https://plus.google.com/share?url='anthonyjones.me/portfolio-2015/ux/ux-strategies-for-increasing-online-donations" target="_blank" class="social-share sharer btn red" title="Share on Google +"><i class="fa fa-google-plus"></i></a>
+    <a href="https://www.facebook.com/sharer/sharer.php?u='anthonyjones.me/portfolio-2015/ux/ux-strategies-for-increasing-online-donations" target="_blank" class="social-share sharer btn blue darken-2" title="Share on Facebook"><i class="fa fa-facebook"></i></a>
+    <a href="http://www.linkedin.com/shareArticle?mini=true&amp;url=anthonyjones.me/portfolio-2015/ux/ux-strategies-for-increasing-online-donations&amp;title=UX Strategies For Increasing Online Donations" target="_blank" class="social-share sharer btn blue darken-3" title="Share on Linkedin"><i class="fa fa-linkedin"></i></a>
+    <a href="http://twitter.com/share?text=UX Strategies For Increasing Online Donations&url=http://anthonyjones.me/portfolio-2015/ux/ux-strategies-for-increasing-online-donations&via=iamtonybagels" target="_blank" class="social-share sharer btn blue lighten-1" title="Share on Twitter" data-position="left" data-delay="50" data-tooltip="Share on Twitter"><i class="fa fa-twitter"></i></a>
+
+  </div>
+  <div class="modal-footer">
+    <a href="#!" class="modal-action modal-close waves-effect waves-orange btn-flat">Close</a>
+  </div>
+</div>
+
+              <div class="flow-text" itemprop="articleBody">
+                 <div class="flow-text" itemprop="articleBody">
+<p>I recently spoke with a non-profit organization in North Carolina that needed an increase in charitable donations. During an assessment of their current site, I noticed that their online giving process needed some simplification and testing. Your goal should be to simplify the process of making an online donation. This article will briefly guide you some of the major things to look for. Getting people to open their wallets online is a very difficult thing to do, so I hope some of what you learn here can be used with your clients.</p>
+<h4 class="light grey-text text-darken-1">Donation Button</h4>
+<p>Ensure that the donate button is clear and distinct from the background and other elements on the page. User’s number one complaint is not knowing how to donate. Make this the easiest element to find on the page. Another important thing to remember is to change button text so they say what they do, instead of having a button labeled “submit”. This will help users navigate your site more efficiently.</p>
+<h4 class="light grey-text text-darken-1">Content has the Lead Role</h4>
+<p>This article won’t be covering content, but it is important to point out that content is the number one factor in increasing your conversions. Users love seeing uncluttered content that is easily scannable and consistent. Use language and offer content that is crafted specifically for the audience. Ask yourself if visitors can connect with the organization on any page of the site? If so, you are on your way to improved results.</p>
+<h4 class="light grey-text text-darken-1">Distinguish between one-time and monthly donations</h4>
+<p>There are two basic forms of donations that most charitable organizations accept: recurring payments and single donations. Make sure you allow users to select one or the other from the beginning of the process. Also, if the organization accepts any other forms of payment, include them as a third option as shown in the example below.</p>
+<aside class="aside-left hide-on-med-and-down">I designed a mockup of recurring payments and a single donation button. This is the first step after a users clicks on the donate button.</aside>
+<p><div class="material-placeholder"><img class="materialboxed radius-three responsive-img aligncenter size-full wp-image-1426 intialized" src="http://appmango.net/anthonyjones/wp-content/uploads/2015/07/Donate-Page.jpg" srcset="http://appmango.net/anthonyjones/wp-content/uploads/2015/07/Donate-Page-300x225.jpg 300w, http://appmango.net/anthonyjones/wp-content/uploads/2015/07/Donate-Page-1024x768.jpg 1024w, http://appmango.net/anthonyjones/wp-content/uploads/2015/07/Donate-Page.jpg 1500w" alt="Donate Amount Page" width="1500" height="1125" sizes="(max-width: 1500px) 100vw, 1500px" /></div></p>
+<div class="image-caption center-align hide-on-large-only">I designed a mockup of recurring payments and a single donation button. This is the first step after a users clicks on the donate button.</div>
+<h4 class="light grey-text text-darken-1">A/B Testing</h4>
+<p>One of the most important things you will need to do to see increased donation conversions is through A/B Testing. Ensure that you are regularly benchmarking and testing the design, imagery, copy, usability and page speed. Some changes work well with certain audiences, but not others, so know your users and their behaviors.</p>
+<h4 class="light grey-text text-darken-1">Donation Form Best Practices</h4>
+<ul>
+<li>1. Put the easier field groups first to lower the engagement barrier</li>
+<li>2. Make the form look short and easy to complete</li>
+<li>3. Remove any unnecessary form fields</li>
+<li>4. Eliminate body copy</li>
+<li>5. Allow the ability to change details like donation amount</li>
+<li>6. Indicate that the user’s information is secure (Note: I’m simply using a lock icon in the example below)</li>
+</ul>
+<aside class="aside-left hide-on-med-and-down">Example mockup of the payment details form</aside>
+<p><div class="material-placeholder"><img class="materialboxed radius-three responsive-img aligncenter size-full wp-image-1427 intialized" src="http://appmango.net/anthonyjones/wp-content/uploads/2015/07/Payment-Details.jpg" srcset="http://appmango.net/anthonyjones/wp-content/uploads/2015/07/Payment-Details-300x225.jpg 300w, http://appmango.net/anthonyjones/wp-content/uploads/2015/07/Payment-Details-1024x768.jpg 1024w, http://appmango.net/anthonyjones/wp-content/uploads/2015/07/Payment-Details.jpg 1500w" alt="Payment Details Screen" width="1500" height="1125" sizes="(max-width: 1500px) 100vw, 1500px" /></div></p>
+<div class="image-caption center-align hide-on-large-only">Example mockup of the payment details form</div>
+<p>Lastly, get creative and try out new things. For example, you could create a ‘donate via text messaging’ option for your mobile users. Again, test it out with tools like <a href="https://www.optimizely.com/" class="anchor">Optimizely</a> and <a href="http://www.google.com/analytics/" class="anchor">Google Analytics</a>, then monitor the results.</p>
+<p>For further reading, I recommend a book on persuasive design patterns called <a href="http://evilbydesign.info" class="anchor">Evil By Design</a> by Chris Nodder. It is an excellent read on how to leverage human habits in our designs.</p>
+<h4 class="light grey-text text-darken-1">Freebie</h4>
+<p>Feel free to download this Sketch file, change, edit, and use however you like.<br />
+<a href="http://appmango.net/anthonyjones/?download=1461"><br />
+<img src="http://appmango.net/anthonyjones/wp-content/uploads/2015/09/donatescreenshot.png" sizes="(max-width: 1204px) 100vw, 1204px" srcset="http://appmango.net/anthonyjones/wp-content/uploads/2015/09/donatescreenshot-300x211.png 300w, http://appmango.net/anthonyjones/wp-content/uploads/2015/09/donatescreenshot-1024x720.png 1024w, http://appmango.net/anthonyjones/wp-content/uploads/2015/09/donatescreenshot.png 1204w" alt="Download Donate Sketch File" width="1204" height="846" class="radius-three responsive-img aligncenter size-full wp-image-1462" /><br />
+</a><br />
+<br />
+<a href="http://appmango.net/anthonyjones/?download=1461" title="Download" class="btn amber">Download</a></p>
+<br />
+</div>
+
+              </div> <!-- .entry-content -->
+              <div class="badges inverse large right">
+                <!-- Modal Trigger -->
+                <a href="#modal1" class="waves-effect modal-trigger"><i class="fa fa-share"></i> Sharing is Caring</a>
+              </div>
+            </div>
+
+            <div class="col hide-on-med-and-down m2 l2">
+  <div class="tabs-wrapper">
+    <ul class="section table-of-contents">
+            
+    </ul>
+  </div>
+</div> 
+
+          </div>
+        </div> <!-- End Post Content -->
+      </div>
+    </main>
+  </article> <!-- #post-## -->
+
+  <div class="container">
+    <div class="row">
+      <div class="col s12 m12 l8 offset-l2">
+        <hr>
+
+        
+          <p class="improve-article">This content is open source. <br />
+ Please <a class="anchor" href="https://github.com/tony-jones/portfolio-2015/edit/source/_posts/2015-09-21-ux-strategies-for-increasing-online-donations.markdown" title="Help Improve article _posts/2015-09-21-ux-strategies-for-increasing-online-donations.markdown">help improve it</a>.
+</p>
+  
+        
+
+        
+          <nav class="navigation post-navigation" role="navigation">
+  <h2 class="screen-reader-text">Post navigation</h2>
+  <div class="nav-links">
+    
+      <a class="prev" href="/portfolio-2015/code/sneak-preview-of-my-new-calculator-app"rel="prev">
+        <i class="fa fa-arrow-left"></i> Previous Article
+      </a>
+    
+    
+      <a class="next" href="/portfolio-2015/accessibility/accessible-typography-for-designers" rel="next">
+         Next Article <i class="fa fa-arrow-right"></i>
+      </a>
+    
+  </div>
+</nav>
+
+        
+
+      </div>
+    </div>
+  </div>
+
+  
+
+      </div>
+      
+      <div class="footer-padding"></div>
+       <!-- Footer -->
+  <footer class="site-footer white" role="contentinfo">
+    <div class="footer-bar">
+      <div class="row">
+        <div class="copyright">
+          <div class="left location hide-on-small-only">
+            View Source: <a href="https://github.com/tony-jones/portfolio-2015"><i class="fa fa-github"></i> GitHub</a>
+          </div>
+          <div class="left location hide-on-med-and-up">
+            <a href="https://github.com/tony-jones/portfolio-2015"><i class="github-icon fa fa-github"></i></a>
+          </div>
+          <div class="right">
+            <div class="waves-effect waves-black top-article">
+              <a href="#back-to-top">TOP <i class="fa fa-caret-square-o-up"></i></a>
+            </div>
+            <div class="waves-effect waves-light next-article">
+              <button id="articles-modal" rel="next" role="button" href="#modal3" class="articles modal-trigger waves-effect waves-light btn">Articles</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Recommended Articles Footer -->
+  <div id="modal3" class="modal bottom-sheet">
+    <div class="modal-content">
+      <a href="#" title="close-modal" class="waves-effect close-arrow close-x close-button">
+        <i class="fa fa-times"></i>
+      </a>
+      <h5 class="footer-title">Recommended Articles</h5>
+       <div class="row">
+         <ul class="collection">
+           <!-- add 'reversed' for ordering -->
+          <div class="no-padding col s12 m6 l6">
+            <div class="recommended">
+              <a style="background-color: #fff;" class="recommended-a close-x" href="/portfolio-2015/code/sneak-preview-of-my-new-calculator-app">
+                <li class="footer-articles waves-effect waves-dark collection-item avatar">
+                <img src="http://appmango.net/anthonyjones/wp-content/uploads/2015/10/calculate.jpg" alt="thumbnail image for recommended articles" class="circle responsive-img">
+                <span class="title grey-text">Sneak Preview of My New Calculator App</span>
+                <p class="Code">
+                  Easy to use and beautifully designed to do things better
+                </p>
+                <span class="footer-categories Code">
+                  Code
+                </span>
+              </li>
+             </a>
+            </div>
+          </div>
+            <!-- add 'reversed' for ordering -->
+          <div class="no-padding col s12 m6 l6">
+            <div class="recommended">
+              <a style="background-color: #fff;" class="recommended-a close-x" href="/portfolio-2015/ux/ux-strategies-for-increasing-online-donations">
+                <li class="footer-articles waves-effect waves-dark collection-item avatar">
+                <img src="http://appmango.net/anthonyjones/wp-content/uploads/2015/09/heart.jpg" alt="thumbnail image for recommended articles" class="circle responsive-img">
+                <span class="title grey-text">UX Strategies For Increasing Online Donations</span>
+                <p class="UX">
+                  Charities truly live or die by the user experience. Give Your Users an Amazing Experience
+                </p>
+                <span class="footer-categories UX">
+                  UX
+                </span>
+              </li>
+             </a>
+            </div>
+          </div>
+            <!-- add 'reversed' for ordering -->
+          <div class="no-padding col s12 m6 l6">
+            <div class="recommended">
+              <a style="background-color: #fff;" class="recommended-a close-x" href="/portfolio-2015/accessibility/accessible-typography-for-designers">
+                <li class="footer-articles waves-effect waves-dark collection-item avatar">
+                <img src="http://appmango.net/anthonyjones/wp-content/uploads/2015/09/font_blocks_800.jpg" alt="thumbnail image for recommended articles" class="circle responsive-img">
+                <span class="title grey-text">Accessible Typography for Designers</span>
+                <p class="Accessibility">
+                  Typographical considerations that designers should know and implement
+                </p>
+                <span class="footer-categories Accessibility">
+                  Accessibility
+                </span>
+              </li>
+             </a>
+            </div>
+          </div>
+            <!-- add 'reversed' for ordering -->
+          <div class="no-padding col s12 m6 l6">
+            <div class="recommended">
+              <a style="background-color: #fff;" class="recommended-a close-x" href="/portfolio-2015/accessibility/android-accessibility-at-google-io">
+                <li class="footer-articles waves-effect waves-dark collection-item avatar">
+                <img src="http://appmango.net/anthonyjones/wp-content/uploads/2015/06/accessibility-blue-braille-google.jpg" alt="thumbnail image for recommended articles" class="circle responsive-img">
+                <span class="title grey-text">Android Accessibility at Google IO</span>
+                <p class="Accessibility">
+                  A summary of Android accessibility services covered during talks at Google IO 2015
+                </p>
+                <span class="footer-categories Accessibility">
+                  Accessibility
+                </span>
+              </li>
+             </a>
+            </div>
+          </div>
+          
+        </ul>
+      </div>
+    </div>
+  </div>
+
+   
+    </div>
+
+    <script type="text/javascript" src="/portfolio-2015/assets/scripts/plugins/jquery-2.1.1.min.js"></script>
+    <script type="text/javascript" src="/portfolio-2015/assets/scripts/plugins/materialize.js"></script>
+    <script type="text/javascript" src="/portfolio-2015/assets/scripts/plugins/headroom.min.js"></script>
+    <script type="text/javascript" src="/portfolio-2015/assets/scripts/plugins/skrollr.min.js"></script>
+    <script type="text/javascript" src="/portfolio-2015/assets/scripts/main.js"></script>
+
+    <!-- asyncronous load of Typekit font -->
+<script>
+(function(d) {
+  var config = {
+    kitId: 'kwr2coa',
+    scriptTimeout: 3000
+  },
+  h=d.documentElement,t=setTimeout(function(){h.className=h.className.replace(/\bwf-loading\b/g,"")+" wf-inactive";},config.scriptTimeout),tk=d.createElement("script"),f=false,s=d.getElementsByTagName("script")[0],a;h.className+=" wf-loading";tk.src='//use.typekit.net/'+config.kitId+'.js';tk.async=true;tk.onload=tk.onreadystatechange=function(){a=this.readyState;if(f||a&&a!="complete"&&a!="loaded")return;f=true;clearTimeout(t);try{Typekit.load(config)}catch(e){}};s.parentNode.insertBefore(tk,s)
+})(document);
+</script>
+
+<script type="text/javascript">
+jQuery(document).ready(function ($) {
+  var disqus_shortname = 'anthonyjones'; // required: replace example with your forum
+  var disqus_div = $("#disqus_thread");
+  if (disqus_div.size() > 0 ) {
+    var ds_loaded = false,
+    top = disqus_div.offset().top,
+    disqus_data = disqus_div.data(),
+    check = function() {
+      if ( !ds_loaded && $(window).scrollTop() + $(window).height() > top ) {
+        ds_loaded = true;
+        for (var key in disqus_data) {
+          if (key.substr(0,6) == 'disqus') {
+            window['disqus_' + key.replace('disqus','').toLowerCase()] = disqus_data[key];
+          }
+        }
+        // s.async = true;
+        var dsq = document.createElement('script');
+        dsq.type = 'text/javascript';
+        dsq.async = true;
+        dsq.src = 'http://' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+      }
+    };
+    $(window).scroll(check);
+    check();
+  }
+});
+</script>
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-33272727-4', 'auto');
+  ga('send', 'pageview');
+
+</script>
+
+    
+  </body>
+
+</html>
