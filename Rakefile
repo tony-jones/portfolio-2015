@@ -7,7 +7,6 @@ require "jekyll"
 
 # Change your GitHub reponame
 GITHUB_REPONAME = "tony-jones/portfolio-2015"
-git@github.com:tony-jones/portfolio-2015.git
 
 def say_what? message
   print message
@@ -41,7 +40,7 @@ task :publish => [:generate] do
     message = "Site updated at #{Time.now.utc}"
     system "git commit -m #{message.inspect}"
     system "git remote add origin git@github.com:#{GITHUB_REPONAME}.git"
-    system "git push origin gh-pages --force"
+    system "git push origin HEAD:gh-pages --force"
 
     Dir.chdir pwd
   end
