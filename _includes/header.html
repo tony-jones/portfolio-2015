@@ -1,0 +1,74 @@
+  <!-- Desktop Navigation -->
+  <header role="banner" class="hide-on-small-only">
+    <div id="toolbar" class="navbar-fixed">
+      <nav id="banner" data-0="height:130px" data-128="height: 64px" class="uva-blue headroom" role="navigation">
+        <div class="container">
+          <div class="nav-wrapper">
+            <a id="desktop-mobile-button" data-activates="mobile-demo" class="mobile-button hide-on-med-and-up sidenav_button btn-floating waves-effect clear-icon">
+              <i class="fa fa-bars text-black"></i>
+            </a>
+            <div class="right">
+              <ul class="hide-on-small">
+                <li class="tab close-nav waves-effect">
+                  <a href="{{ site.baseurl }}/writing">Writing</a>
+                </li>
+                <li class="tab close-nav waves-effect">
+                  <a href="{{ site.baseurl }}/projects">Projects</a>
+                </li>
+                <li class="tab close-nav">
+                  <a href="https://github.com/tony-jones/portfolio-2015">GitHub</a>
+                </li>
+                <li class="tab close-nav">
+                  <a href="mailto:{{ site.email_secure }}">Contact</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div id="title" data-0="font-size: 40px; padding: 0 0 24px 35px;" data-128="font-size: 26px; padding: 0 0 15px 50px;">
+            <a id="home-logo" href="/">
+              Anthony Jones<span class="regular teal-text">.</span>
+            </a>
+          </div>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Mobile Device Navigation For CSS FIXED BUGS-->
+  <div id="mobile-toolbar" class="navbar-fixed hide-on-med-and-up">
+    <nav id="mobile-banner" class="uva-blue" role="navigation">
+      <div class="container">
+        <div class="nav-wrapper">
+          <a href="/" class="brand-logo grey-text text-darken-3 light">Anthony Jones<span class="regular teal-text">.</a>
+          <ul class="left hide-on-med-and-up">
+            <li><a data-activates="mobile-demo" class="sidenav_button waves-effect"><i class="fa fa-bars"></i></a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </div>
+
+  <!-- Mobile Device Navigation For CSS FIXED BUGS-->
+  <nav class="orange white">
+    <div class="side-nav" id="mobile-demo">
+      <div class="sidenav-logo grey lighten-3">
+        <a id="side-close" class="waves-effect close-arrow">
+          <i class="fa fa-arrow-left"></i>
+        </a>
+      </div>
+      <ul class="menu">
+        <li class="tab close-nav">
+          <a href="{{ site.baseurl }}/writing">Writing</a>
+        </li>
+        <li class="tab close-nav">
+          <a href="{{ site.baseurl }}/projects">Projects</a>
+        </li>
+        <li class="tab close-nav">
+          <a href="https://github.com/tony-jones/portfolio-2015">GitHub</a>
+        </li>
+        <li class="tab close-nav">
+          <a href="{{ site.email_secure }}">Contact</a>
+        </li>
+      </ul>
+    </div>
+  </nav>

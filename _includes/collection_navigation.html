@@ -1,0 +1,42 @@
+{% capture the_collection %}{{page.collection}}{% endcapture %}
+  {% if page.collection %}
+    {% assign  document = site[the_collection]  %}
+  {% endif %}
+{% for links in document  %}
+  {% if links.title == page.title %}
+    {% unless forloop.first %}
+      {% assign prevurl = prev.url %}
+    {% endunless %}
+    {% unless forloop.last %}
+      {% assign next = document[forloop.index] %}
+      {% assign nexturl = next.url %}
+    {% endunless %}
+  {% endif %}
+  {% assign prev = links %}
+{% endfor %}
+
+<script>
+document.body.onkeyup = function(e){
+if (e.keyCode == '37') { window.location = '{{prevurl}}'; }
+if (e.keyCode == '39') { window.location = '{{nexturl}}'; }
+};
+</script>
+
+<nav class="navigation post-navigation" role="navigation">
+  <h2 class="screen-reader-text">Post navigation</h2>
+  <div class="nav-links">
+
+    {% if nexturl %}
+      <a class="next" rel="next" href="{{ site.baseurl }}{{nexturl}}">
+      <i class="fa fa-arrow-left"></i> Previous Project
+      </a>
+    {% endif %}
+
+    {% if prevurl %}
+      <a class="prev" rel="prev" href="{{ site.baseurl }}{{prevurl}}">
+         Next Project <i class="fa fa-arrow-right"></i>
+      </a>
+    {% endif %}
+
+  </div>
+</nav>

@@ -1,0 +1,28 @@
+---
+layout: default
+---
+
+{% for project in site.projects reversed %}
+<div class="container">
+    <div class="row no-padding">
+      <div class="blog-link">
+        <div class="hoverable portfolio-blog-item no-padding col s12 m12 l10 offset-l1">
+          <a class="waves-effect portfolio-article-link" href="{{ site.baseurl }}{{ project.url }}">
+            <div class="col s12 m6" style="padding: 15px 25px 30px 40px;">
+              <h3 itemprop="headline" class="light {{ project.category }}">{{ project.title }}</h3>
+              <h5 style="line-height: 1.52rem;" class="grey-text light">{{ project.excerpt }}</h5>
+              <span class="{{ project.category }} badge">
+                {{ project.category }}
+              </span>
+            </div>
+            <div class="col s12 m6 no-padding">
+              <div class="bg-img-half" style="background-image: url('{{ project.project_image }}')">
+              </div>
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+<br>
+{% endfor %}

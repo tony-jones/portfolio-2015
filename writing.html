@@ -1,0 +1,39 @@
+---
+layout: default
+---
+
+{% for post in site.posts %}
+<div class="container">
+    <div class="row no-padding">
+      <div class="blog-link">
+        <div class="hoverable waves-effect blog-item col s12 m12 l10 offset-l1">
+          <a class="article-link" href="{{ site.baseurl }}{{ post.url }}">
+            <div class="col s12 m6">
+              <h5 itemprop="headline" class="light {{ post.category }}">{{ post.title }}</h5>
+              <span itemprop="datePublished" class="date grey-text">{{ post.date | timeago }}</span><br>
+              <span class="readingTime grey-text">Estimated Reading Time:
+                {% assign words = post.content | number_of_words %}
+                {% if words < 360 %}
+                  1 min
+                {% else %}
+                {{ words | plus:90 | divided_by:180 }} mins
+                {% endif %}
+              </span><br>
+              <span class="{{ post.category }} badge">
+                {{ post.category }}
+              </span>
+            </div>
+            <div class="col s12 m6">
+              <div class="light align-with-title">
+                <p class="grey-text text-darken-1">
+                  {{ post.excerpt }}
+                </p>
+              </div>
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+</div>
+<br>
+{% endfor %}

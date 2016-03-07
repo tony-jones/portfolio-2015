@@ -1,0 +1,15 @@
+<nav class="navigation post-navigation" role="navigation">
+  <h2 class="screen-reader-text">Post navigation</h2>
+  <div class="nav-links">
+    {% if page.next.url %}
+      <a class="prev" href="{{ site.baseurl }}{{page.next.url}}"rel="prev">
+        <i class="fa fa-arrow-left"></i> Previous Article
+      </a>
+    {% endif %}
+    {% if page.previous.url %}
+      <a class="next" href="{{ site.baseurl }}{{page.previous.url}}" rel="next">
+         Next Article <i class="fa fa-arrow-right"></i>
+      </a>
+    {% endif %}
+  </div>
+</nav>

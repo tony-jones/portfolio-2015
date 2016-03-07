@@ -1,0 +1,9 @@
+<div class="col hide-on-med-and-down m2 l2">
+  <div class="tabs-wrapper">
+    <ul class="section table-of-contents">
+      {% for tag in page.tags %}
+        <li><a href="#{{ tag }}" class="waves-effect">{{ tag }}</a></li>  
+      {% endfor %}      
+    </ul>
+  </div>
+</div> 

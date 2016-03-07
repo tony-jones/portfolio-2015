@@ -1,0 +1,101 @@
+# ==================
+# Environment
+# ==================
+environment: production # not needed after all. Always prod on github pages
+branch: source # allow users to improve content, add links, or change information
+repository_url: tony-jones/portfolio-2015
+# ==================
+# Site Settings
+# ==================
+title: Anthony Jones | Product Designer
+description: > # this means to ignore newlines until "baseurl:"
+  I am a product designer with a passion for web accessibility and application security.
+  Come check out my thoughts, writing, and general web stuff.
+
+baseurl: "/portfolio-2015" # the subpath of your site, e.g. /blog/
+url: "anthonyjones.me" # the base hostname & protocol for the site
+
+# ==================
+# Author
+# ==================
+name: Anthony Jones
+author:
+    name: Anthony Jones
+    firstname: Anthony
+    lastname: Jones
+    nickname: Tony
+    description: "I am a product designer with a passion for web accessibility and application security. Come check out my thoughts, writing, and general web stuff."
+
+email: info@anthonyjones.me
+email_secure: "&#105;&#110;&#102;&#111;&#064;&#097;&#110;&#116;&#104;&#111;&#110;&#121;&#106;&#111;&#110;&#101;&#115;&#046;&#109;&#101;"
+
+social:
+    twitter: "https://twitter.com/iamtonybagels"
+    twitter_handle: "iamtonybagels"
+    github: "https://github.com/tony-jones"
+    instagram: "https://instagram.com/iamtonybagels"
+    google: "https://plus.google.com/"
+
+# ==================
+# Build
+# ==================
+markdown: kramdown
+permalink: pretty
+exclude: [
+    "Gemfile",
+    "Gemfile.lock"
+]
+
+gems: [jekyll-assets, rouge, autoprefixer-rails, jekyll-sitemap]
+
+# ==================
+# Assets
+# ==================
+
+sass:
+    sass_dir: _assets/styles
+    style: compressed
+
+assets:
+    baseurl: "/assets/" #Add URL here if assets are going to be hosted elsewhere later on.
+    cache: 'true'
+    dirname: assets
+    cachebust: none
+    css_compressor: sass
+    js_compressor: uglifier
+    gzip: [text/css, application/javascript]
+    debug: true
+    sources:
+        - _assets
+        - _assets/images
+        - _assets/javascript
+        - _assets/styles
+
+# ==================
+# Defaults
+# ==================
+defaults:
+  -
+    scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
+      is_post: 'true' # set is_post=true for all posts
+  -
+    scope:
+      path: "projects"
+      type: "pages" # previously `page` in Jekyll 2.2.
+    values:
+      layout: "post" # overrides previous default layout
+      author: "Anthony Jones"
+      is_post: false # set is_post=false for all projects
+
+
+# ==================
+# Collections (Like Custom Post Types)
+# ==================
+collections:
+  projects:
+    output: 'true'
+    permalink: /projects/:title/

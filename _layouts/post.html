@@ -1,0 +1,91 @@
+---
+layout: default
+comments: true
+---
+  <!-- Set your background image for this header on the line below. -->
+  <article itemscope itemtype="http://schema.org/Article">
+    <main>
+      <div class="content-single-top">
+        <div id="index-banner" class="section no-pad-bot overlay" itemprop="image" content="{{ page.thumbnail_url }}"
+        style="background-color: rgba(0, 148, 255, 0.26);
+               background-image: linear-gradient(
+               rgba(0, 0, 0, 0.3),
+               rgba(0, 0, 0, 0.3) ),
+               url('{{ page.thumbnail_url }}');
+               background-repeat: no-repeat;
+               background-attachment: scroll;
+               background-position: center top;
+               background-size: cover;
+               -o-background-size: cover;">
+          <div class="banner_container">
+            <div class="heading">
+              <div class="badges center">
+                <a href="#" rel="category tag">{{ page.category }}</a>
+              </div>
+              <h1 itemprop="headline" class="title-padding header center white-text">{{ page.title }}</h1>
+              <div class="center">
+                <h2 itemprop="alternativeHeadline" id="subtitle" class="light header col s12 white-text">{{ page.subtitle }}</h2>
+              </div>
+              <div class="post-details center">
+                <span class="date updated white-text" itemprop="datePublished">
+                  {{ page.date | date: '%B %d, %Y' }}
+                </span>
+                &nbsp;
+                <span class="author vcard white-text">
+                by <span itemprop="author" itemscope itemtype="http://schema.org/Person">
+                  <a class="white-text" title="" rel="author" itemprop="name">{% if page.author %} {{ page.author }}{% endif %}</a>
+                   </span>
+                </span>
+              </div>
+            </div>
+            <br><br>
+          </div>
+        </div>
+
+        <!-- Post Content -->
+        <div class="container">
+          <div class="row">
+            <div class="image-caption center-align">
+              {{ page.caption }}
+            </div>
+            <div class="col s12 m12 l8 offset-l2">
+              {% include share.html %}
+              <div class="flow-text" itemprop="articleBody">
+                 {{ content }}
+              </div> <!-- .entry-content -->
+              <div class="badges inverse large right">
+                <!-- Modal Trigger -->
+                <a href="#modal1" class="waves-effect modal-trigger"><i class="fa fa-share"></i> Sharing is Caring</a>
+              </div>
+            </div>
+
+            {% include table_contents.html %}
+
+          </div>
+        </div> <!-- End Post Content -->
+      </div>
+    </main>
+  </article> <!-- #post-## -->
+
+  <div class="container">
+    <div class="row">
+      <div class="col s12 m12 l8 offset-l2">
+        <hr>
+
+        {% if page.is_post %}
+          {% include improve.html %}
+        {% endif %}
+
+        {% if page.collection == 'projects' %}
+          {% include collection_navigation.html %}
+        {% else %}
+          {% include post_navigation.html %}
+        {% endif %}
+
+      </div>
+    </div>
+  </div>
+
+  {% if page.comments %}
+    <div id="disqus_thread"></div>
+  {% endif %}

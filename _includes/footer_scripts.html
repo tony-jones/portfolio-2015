@@ -1,0 +1,51 @@
+<!-- asyncronous load of Typekit font -->
+<script>
+(function(d) {
+  var config = {
+    kitId: 'kwr2coa',
+    scriptTimeout: 3000
+  },
+  h=d.documentElement,t=setTimeout(function(){h.className=h.className.replace(/\bwf-loading\b/g,"")+" wf-inactive";},config.scriptTimeout),tk=d.createElement("script"),f=false,s=d.getElementsByTagName("script")[0],a;h.className+=" wf-loading";tk.src='//use.typekit.net/'+config.kitId+'.js';tk.async=true;tk.onload=tk.onreadystatechange=function(){a=this.readyState;if(f||a&&a!="complete"&&a!="loaded")return;f=true;clearTimeout(t);try{Typekit.load(config)}catch(e){}};s.parentNode.insertBefore(tk,s)
+})(document);
+</script>
+
+<script type="text/javascript">
+jQuery(document).ready(function ($) {
+  var disqus_shortname = 'anthonyjones'; // required: replace example with your forum
+  var disqus_div = $("#disqus_thread");
+  if (disqus_div.size() > 0 ) {
+    var ds_loaded = false,
+    top = disqus_div.offset().top,
+    disqus_data = disqus_div.data(),
+    check = function() {
+      if ( !ds_loaded && $(window).scrollTop() + $(window).height() > top ) {
+        ds_loaded = true;
+        for (var key in disqus_data) {
+          if (key.substr(0,6) == 'disqus') {
+            window['disqus_' + key.replace('disqus','').toLowerCase()] = disqus_data[key];
+          }
+        }
+        // s.async = true;
+        var dsq = document.createElement('script');
+        dsq.type = 'text/javascript';
+        dsq.async = true;
+        dsq.src = 'http://' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+      }
+    };
+    $(window).scroll(check);
+    check();
+  }
+});
+</script>
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-33272727-4', 'auto');
+  ga('send', 'pageview');
+
+</script>
